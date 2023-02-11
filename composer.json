@@ -1,6 +1,6 @@
 {
     "name": "preemstudio/laravel-binary-uuid",
-    "description": "Binary UUIDs for Laravel Eloquent Models",
+    "description": "A package to easily make use of binary UUIDs with Laravel Eloquent.",
     "keywords": [
         "PreemStudio",
         "laravel",

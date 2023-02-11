@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-binary-uuid/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/preemstudio/laravel-binary-uuid/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/preemstudio/laravel-binary-uuid.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-binary-uuid)
 
-A custom cast for Eloquent models to enable the use of performant binary UUIDs.
+A package to easily make use of binary UUIDs with Laravel Eloquent.
 
 ## Installation
 
