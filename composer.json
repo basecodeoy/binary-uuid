@@ -1,6 +1,7 @@
 {
     "name": "preemstudio/laravel-binary-uuid",
     "description": "A package to easily make use of binary UUIDs with Laravel Eloquent.",
+    "license": "MIT",
     "keywords": [
         "PreemStudio",
         "laravel",
@@ -14,8 +15,6 @@
         "sqlite",
         "database"
     ],
-    "homepage": "https://github.com/preemstudio/laravel-binary-uuid",
-    "license": "MIT",
     "authors": [
         {
             "name": "Brian Faust",
@@ -23,50 +22,13 @@
             "role": "Developer"
         }
     ],
+    "homepage": "https://github.com/preemstudio/laravel-binary-uuid",
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^10.0",
-        "ramsey/uuid": "4.x-dev",
-        "preemstudio/laravel-jetpack": "^1.0"
+        "preemstudio/laravel-jetpack": "^1.0",
+        "ramsey/uuid": "4.x-dev"
     },
-    "autoload": {
-        "psr-4": {
-            "PreemStudio\\BinaryUuid\\": "src",
-            "PreemStudio\\BinaryUuid\\Database\\Factories\\": "database/factories"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
-        "analyse": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/pint --config vendor/preemstudio/laravel-jetpack/pint.json"
-    },
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true,
-            "ergebnis/composer-normalize": true
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "PreemStudio\\BinaryUuid\\BinaryUuidServiceProvider"
-            ],
-            "aliases": {
-                "BinaryUuid": "PreemStudio\\BinaryUuid\\Facades\\BinaryUuid"
-            }
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require-dev": {
         "ergebnis/composer-normalize": "^2.30",
         "laravel/pint": "^1.6",
@@ -80,5 +42,43 @@
         "phpstan/phpstan-deprecation-rules": "^1.1",
         "phpstan/phpstan-phpunit": "^1.3",
         "spatie/laravel-ray": "^1.32"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "PreemStudio\\BinaryUuid\\": "src",
+            "PreemStudio\\BinaryUuid\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true,
+            "ergebnis/composer-normalize": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "BinaryUuid": "PreemStudio\\BinaryUuid\\Facades\\BinaryUuid"
+            },
+            "providers": [
+                "PreemStudio\\BinaryUuid\\BinaryUuidServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint --config vendor/preemstudio/laravel-jetpack/pint.json",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
     }
 }
