@@ -7,7 +7,7 @@ namespace PreemStudio\BinaryUuid\Casts;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Ramsey\Uuid\Uuid;
 
-class Binary implements CastsAttributes
+final class Binary implements CastsAttributes
 {
     /**
      * Cast the given value.

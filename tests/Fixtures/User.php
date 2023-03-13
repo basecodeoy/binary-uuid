@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use PreemStudio\BinaryUuid\Casts\Binary;
 
-class User extends Model
+final class User extends Model
 {
     use HasFactory;
 
