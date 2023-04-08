@@ -12,10 +12,10 @@ final class Binary implements CastsAttributes
     /**
      * Cast the given value.
      *
-     * @param  \Illuminate\Database\Eloquent\Model  $model
-     * @param  string  $key
-     * @param  mixed  $value
-     * @param  array  $attributes
+     * @param  \Illuminate\Database\Eloquent\Model $model
+     * @param  string                              $key
+     * @param  mixed                               $value
+     * @param  array                               $attributes
      * @return mixed
      */
     public function get($model, $key, $value, $attributes)
@@ -30,10 +30,10 @@ final class Binary implements CastsAttributes
     /**
      * Prepare the given value for storage.
      *
-     * @param  \Illuminate\Database\Eloquent\Model  $model
-     * @param  string  $key
-     * @param  mixed  $value
-     * @param  array  $attributes
+     * @param  \Illuminate\Database\Eloquent\Model $model
+     * @param  string                              $key
+     * @param  mixed                               $value
+     * @param  array                               $attributes
      * @return mixed
      */
     public function set($model, $key, $value, $attributes)
@@ -43,7 +43,7 @@ final class Binary implements CastsAttributes
         }
 
         return [
-            $key => Uuid::fromString(strtolower($value))->getBytes(),
+            $key => Uuid::fromString(\mb_strtolower($value))->getBytes(),
         ];
     }
 }

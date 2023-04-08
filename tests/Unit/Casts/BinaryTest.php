@@ -6,6 +6,6 @@ namespace Tests\Unit\Casts;
 
 use Tests\Fixtures\User;
 
-it('should get the UUID as a string', function () {
+it('should get the UUID as a string', function (): void {
     expect(User::factory()->make()->uuid)->toBeString();
 });

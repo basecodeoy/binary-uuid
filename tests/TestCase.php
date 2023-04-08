@@ -7,6 +7,9 @@ namespace Tests;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+/**
+ * @internal
+ */
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
     protected function setUp(): void
@@ -15,7 +18,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
 
         Schema::dropAllTables();
 
-        $this->app['db']->connection()->getSchemaBuilder()->create('posts', function (Blueprint $table) {
+        $this->app['db']->connection()->getSchemaBuilder()->create('posts', function (Blueprint $table): void {
             $table->increments('id');
             $table->binary('uuid');
             $table->string('name');
