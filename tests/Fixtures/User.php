@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Fixtures;
 
+use BombenProdukt\BinaryUuid\Casts\Binary;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use BombenProdukt\BinaryUuid\Casts\Binary;
 
 final class User extends Model
 {
