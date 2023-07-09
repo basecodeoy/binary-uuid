@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/laravel-binary-uuid/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/laravel-binary-uuid" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-binary-uuid">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/laravel-binary-uuid" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-binary-uuid">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/laravel-binary-uuid" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-binary-uuid">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/laravel-binary-uuid" alt="License" />
-    </a>
-</p>
 
 ## About Laravel Binary UUID
 
