@@ -22,7 +22,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/BombenProdukt/laravel-binary-uuid",
+    "homepage": "https://github.com/faustbrian/laravel-binary-uuid",
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^10.0",
