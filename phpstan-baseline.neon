@@ -1,0 +1,71 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 1
+			path: src/Casts/Binary.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\BinaryUuid\\\\Casts\\\\Binary implements generic interface Illuminate\\\\Contracts\\\\Database\\\\Eloquent\\\\CastsAttributes but does not specify its types\\: TGet, TSet$#"
+			count: 1
+			path: src/Casts/Binary.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\BinaryUuid\\\\Casts\\\\Binary\\:\\:get\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Casts/Binary.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\BinaryUuid\\\\Casts\\\\Binary\\:\\:set\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Casts/Binary.php
+
+		-
+			message: "#^Parameter \\#1 \\$bytes of static method Ramsey\\\\Uuid\\\\Uuid\\:\\:fromBytes\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Casts/Binary.php
+
+		-
+			message: "#^Class Tests\\\\Fixtures\\\\User uses generic trait Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\HasFactory but does not specify its types\\: TFactory$#"
+			count: 1
+			path: tests/Fixtures/User.php
+
+		-
+			message: "#^Method Tests\\\\Fixtures\\\\User\\:\\:newFactory\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/Fixtures/User.php
+
+		-
+			message: "#^Class Tests\\\\Fixtures\\\\UserFactory extends generic class Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory but does not specify its types\\: TModel$#"
+			count: 1
+			path: tests/Fixtures/UserFactory.php
+
+		-
+			message: "#^Method Tests\\\\Fixtures\\\\UserFactory\\:\\:definition\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/Fixtures/UserFactory.php
+
+		-
+			message: "#^PHPDoc type string of property Tests\\\\Fixtures\\\\UserFactory\\:\\:\\$model is not the same as PHPDoc type class\\-string\\<Illuminate\\\\Database\\\\Eloquent\\\\Model\\> of overridden property Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory\\<Illuminate\\\\Database\\\\Eloquent\\\\Model\\>\\:\\:\\$model\\.$#"
+			count: 1
+			path: tests/Fixtures/UserFactory.php
+
+		-
+			message: "#^Return type \\(array\\) of method Tests\\\\Fixtures\\\\UserFactory\\:\\:definition\\(\\) should be covariant with return type \\(array\\<string, mixed\\>\\) of method Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory\\<Illuminate\\\\Database\\\\Eloquent\\\\Model\\>\\:\\:definition\\(\\)$#"
+			count: 1
+			path: tests/Fixtures/UserFactory.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Offset 'db' does not exist on Illuminate\\\\Foundation\\\\Application\\|null\\.$#"
+			count: 1
+			path: tests/TestCase.php

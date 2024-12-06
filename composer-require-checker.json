@@ -1,0 +1,14 @@
+{
+    "symbol-whitelist": [
+        "array",
+        "bool",
+        "false",
+        "int",
+        "null",
+        "self",
+        "string",
+        "true",
+        "blank",
+        "Illuminate\\Contracts\\Database\\Eloquent\\CastsAttributes"
+    ]
+}
